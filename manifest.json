@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "TextOut Automater",
+    "version": "1.0",
+    "description": "An extension that interacts with the send message button.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.google.com/*"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icons/clicker-icon.png"
+      }
+    },
+    "icons": {
+      "48": "icons/clicker-icon.png"
+    }
+  }
